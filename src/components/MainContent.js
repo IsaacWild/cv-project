@@ -10,8 +10,25 @@ class MainContent extends Component {
 
     render() {
         return (
-            <div>
-                This is where the form wwill go to enter the info
+            <div className="MainContainer">
+                This is where the form will go to enter the info
+                <form>
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Summary</legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Work Experience</legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Skills</legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Education</legend>
+                    </fieldset>
+                </form>
             </div>
         )
     }
