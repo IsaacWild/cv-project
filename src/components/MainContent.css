@@ -2,3 +2,24 @@
     background-color: hsl(165, 39%, 90%);
     padding: 1rem 1.5rem;
 }
+
+fieldset{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+input{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+textarea{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+.PersonalProfile{
+
+}
