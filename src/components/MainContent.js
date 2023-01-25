@@ -8,21 +8,26 @@ import Education from './forms/Education';
 import React, { Component } from "react";
 
 class MainContent extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
+
+        this.onClickBtn = this.onClickBtn.bind(this);
     }
 
-    /* Javascript functions can be written here */
+    onClickBtn(e) {
+        console.log('Button has been clicked!');
+        e.preventDefault();
+    }
 
     render() {
         return (
             <div className='MainContainer'>
                 <p className='pageInfo'>Feilds below marked with a * are required</p>
-                <PersonalInfo />
-                <PersonalProfile />
-                <EmploymentHistory />
-                <Skills />
-                <Education />
+                <PersonalInfo onButtonClicked={this.onClickBtn} />
+                <PersonalProfile onButtonClicked={this.onClickBtn} />
+                <EmploymentHistory onButtonClicked={this.onClickBtn} />
+                <Skills onButtonClicked={this.onClickBtn} />
+                <Education onButtonClicked={this.onClickBtn} />
             </div>
         )
     }

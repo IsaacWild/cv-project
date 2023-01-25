@@ -12,19 +12,19 @@ class Education extends Component {
             <form>
                     <fieldset>
                         <legend>Education</legend>
-                            <label for='place'>*University/college/school:</label>
+                            <label htmlFor='place'>*University/college/school:</label>
                             <input type='text' id='place' required></input>
-                            <label for='qualification'>*Qualification(s):</label>
+                            <label htmlFor='qualification'>*Qualification(s):</label>
                             <input type='text' id='qualification' required placeholder='Degree, BTEC, A-level, GCSE'></input>
-                            <label for='subject'>*Course/subject's:</label>
+                            <label htmlFor='subject'>*Course/subject's:</label>
                             <input type='text' id='subject' required placeholder='Art, Math, IT, Physical Education'></input>
-                            <label for='grades'>*Grades:</label>
+                            <label htmlFor='grades'>*Grades:</label>
                             <input type='text' id='grades' required placeholder='2.0, A-C, Pass, 1-5'></input>
-                            <label for='completed'>*Date of completion:</label>
+                            <label htmlFor='completed'>*Date of completion:</label>
                             <input type='date' id='completed'></input>
-                            <label for='eduDescription'>Description</label>
+                            <label htmlFor='eduDescription'>Description</label>
                             <input type='text' id='eduDescription' placeholder='Optional description'></input>
-                            <button>Add Education</button>
+                            <button type="submit" onClick={this.props.onButtonClicked}>Add Education</button>
                     </fieldset>
                 </form>
         )

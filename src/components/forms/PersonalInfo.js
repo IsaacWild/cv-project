@@ -12,27 +12,27 @@ class PersonalInfo extends Component {
                 <form>
                 <fieldset className="PersonalInfo">
                     <legend>Personal Info</legend>
-                    <label for="name">*Name:</label>
+                    <label htmlFor="name">*Name:</label>
                     <input
                     type="text"
                     id="name"
                     required
                     placeholder="First and last name"
                     ></input>
-                    <label for="email">*Email:</label>
+                    <label htmlFor="email">*Email:</label>
                     <input
                     type="text"
                     id="email"
                     required
                     placeholder="Your email address"
                     ></input>
-                    <label for="link">Weblink:</label>
+                    <label htmlFor="link">Weblink:</label>
                     <input
                     type="text"
                     id="link"
                     placeholder="If you have a portfolio to show off"
                     ></input>
-                    <button>Add Personal Info</button>
+                    <button type="submit" onClick={this.props.onButtonClicked}>Add Personal Info</button>
                 </fieldset>
                 </form>
         )

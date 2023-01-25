@@ -12,9 +12,9 @@ class Skills extends Component {
             <form>
                     <fieldset>
                         <legend>Skills</legend>
-                            <label for='skills'>*Key Skills:</label>
+                            <label htmlFor='skills'>*Key Skills:</label>
                             <textarea rows='5' id='skills' required placeholder='Give some skills with examples that are relevant to the job application that may not be from previous jobs.'></textarea>
-                            <button>Add Skills</button>
+                            <button type="submit" onClick={this.props.onButtonClicked}>Add Skills</button>
                     </fieldset>
                 </form>
         )
