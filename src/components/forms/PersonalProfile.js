@@ -5,11 +5,15 @@ class PersonalProfile extends Component {
         super(props)
     }
 
-    /* Javascript functions can be written here */
+    /* Javascript functions can be written here 
+    
+    
+    
+    */
 
     render() {
         return (
-            <form>
+            <form onSubmit={this.props.handleSubmit}>
                     <fieldset className='PersonalProfile'>
                         <legend>Personal Profile</legend>
                             <label htmlFor='profile'>*Personal Profile:</label>

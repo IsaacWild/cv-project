@@ -12,18 +12,23 @@ class MainContent extends Component {
         super(props)
 
         this.onClickBtn = this.onClickBtn.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    onClickBtn(e) {
+    onClickBtn() {
         console.log('Button has been clicked!');
-        e.preventDefault();
+    }
+
+    handleSubmit = event => {
+        event.preventDefault(event);
+        console.log('Form submitted');
     }
 
     render() {
         return (
             <div className='MainContainer'>
                 <p className='pageInfo'>Feilds below marked with a * are required</p>
-                <PersonalInfo onButtonClicked={this.onClickBtn} />
+                <PersonalInfo onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
                 <PersonalProfile onButtonClicked={this.onClickBtn} />
                 <EmploymentHistory onButtonClicked={this.onClickBtn} />
                 <Skills onButtonClicked={this.onClickBtn} />
