@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./formStyle.css"
 
 class PersonalProfile extends Component {
     constructor(props) {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./formStyle.css"
 class PersonalInfo extends Component {
     constructor() {
         super()
