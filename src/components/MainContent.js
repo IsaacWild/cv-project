@@ -28,11 +28,13 @@ class MainContent extends Component {
         return (
             <div className='MainContainer'>
                 <p className='pageInfo'>Feilds below marked with a * are required</p>
-                <PersonalInfo onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
-                <PersonalProfile onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
-                <EmploymentHistory onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
-                <Skills onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
-                <Education onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
+                <div className='formHolder'>
+                    <PersonalInfo onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
+                    <PersonalProfile onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
+                    <EmploymentHistory onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
+                    <Skills onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
+                    <Education onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
+                </div>
             </div>
         )
     }

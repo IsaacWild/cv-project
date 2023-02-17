@@ -1,8 +1,25 @@
-.MainContainer{
-    background-color: hsl(165, 39%, 90%);
-    max-width: 100vw;
+.MainContainer {
+  background-color: #dcefea;
+  opacity: 0.7;
+  background-image: radial-gradient(
+      #cabbb7 1.6500000000000001px,
+      transparent 1.6500000000000001px
+    ),
+    radial-gradient(#cabbb7 1.6500000000000001px, #dcefea 1.6500000000000001px);
+  background-size: 66px 66px;
+  background-position: 0 0, 33px 33px;
+
+  max-width: 100vw;
 }
 
-.pageInfo{
-    padding: 1rem;
+.pageInfo {
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .formHolder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    align-items: stretch;
+  }
 }
