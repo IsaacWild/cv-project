@@ -10,7 +10,7 @@ class Skills extends Component {
 
     render() {
         return (
-            <form>
+            <form onSubmitCapture={this.props.handleSubmit}>
                     <fieldset>
                         <legend>Skills</legend>
                             <label htmlFor='skills'>*Key Skills:</label>

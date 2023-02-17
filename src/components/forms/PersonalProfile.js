@@ -14,7 +14,7 @@ class PersonalProfile extends Component {
 
     render() {
         return (
-            <form onSubmit={this.props.handleSubmit}>
+            <form onSubmitCapture={this.props.handleSubmit}>
                     <fieldset className='PersonalProfile'>
                         <legend>Personal Profile</legend>
                             <label htmlFor='profile'>*Personal Profile:</label>

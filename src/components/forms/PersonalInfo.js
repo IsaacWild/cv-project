@@ -9,7 +9,7 @@ class PersonalInfo extends Component {
 
     render() {
         return (
-                <form>
+                <form onSubmitCapture={this.props.handleSubmit}>
                 <fieldset className="PersonalInfo">
                     <legend>Personal Info</legend>
                     <label htmlFor="name">*Name:</label>

@@ -10,7 +10,7 @@ class Education extends Component {
 
     render() {
         return (
-            <form>
+            <form onSubmitCapture={this.props.handleSubmit}>
                     <fieldset>
                         <legend>Education</legend>
                             <label htmlFor='place'>*University/college/school:</label>

@@ -29,10 +29,10 @@ class MainContent extends Component {
             <div className='MainContainer'>
                 <p className='pageInfo'>Feilds below marked with a * are required</p>
                 <PersonalInfo onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
-                <PersonalProfile onButtonClicked={this.onClickBtn} />
-                <EmploymentHistory onButtonClicked={this.onClickBtn} />
-                <Skills onButtonClicked={this.onClickBtn} />
-                <Education onButtonClicked={this.onClickBtn} />
+                <PersonalProfile onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
+                <EmploymentHistory onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
+                <Skills onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
+                <Education onButtonClicked={this.onClickBtn} handleSubmit={this.handleSubmit} />
             </div>
         )
     }

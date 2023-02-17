@@ -10,7 +10,7 @@ class EmploymentHistory extends Component {
 
     render() {
         return (
-            <form>
+            <form onSubmitCapture={this.props.handleSubmit}>
                     <fieldset>
                         <legend>Employment History</legend>
                             <label htmlFor='currentJob'>Curret Job</label>
